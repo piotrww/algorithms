@@ -15,9 +15,13 @@ var i = Math.floor((Math.random() * 10) + 1);
     console.log("You did not win");
   }
 
-  //Another example
-  var x = 0;
-  while(x !== 3){
-    x = Math.floor((Math.random() * 5) + 1);
-    console.log(x);
-  }
+//Ex. 2 Find number bigger than 5
+
+do {
+entryToLoop++;
+//console.log(entryToLoop); // Do something with number of entries to loop, next point.
+  var randNumber = Math.floor((Math.random() * 10) + 1);
+  console.log("Number is not bigger than 5");
+
+  } while (randNumber > 5);
+var entryToLoop = 0;
