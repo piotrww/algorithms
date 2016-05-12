@@ -18,7 +18,7 @@ var i = Math.floor((Math.random() * 10) + 1);
 //Ex. 2 Find number bigger than 5
 
 do {
-entryToLoop++;
+//entryToLoop++;
 //console.log(entryToLoop); // Do something with number of entries to loop, next point.
   var randNumber = Math.floor((Math.random() * 10) + 1);
   console.log("Number is not bigger than 5");
