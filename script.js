@@ -17,11 +17,15 @@ var i = Math.floor((Math.random() * 10) + 1);
 
 //Ex. 2 Find number bigger than 5
 
-do {
-var howManyEntries = entryToLoop++;
-  var randNumber = Math.floor((Math.random() * 10) + 1);
-  console.log("Number is not bigger than 5");
-
-  } while (randNumber > 5);
 var entryToLoop = 1;
-console.log("Number is found after " + howManyEntries +"times");
+
+do {
+    var howManyEntries = entryToLoop++;
+    var randNumber = Math.floor((Math.random() * 10) + 1);
+
+        if (randNumber <5 ) {
+            console.log("Number is not bigger than 5. This number is " + randNumber);
+        }
+  } while (randNumber < 5);
+
+console.log("Number is found after " + howManyEntries +" times. " +"This number is " + randNumber);
