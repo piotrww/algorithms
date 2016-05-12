@@ -23,7 +23,7 @@ do {
     var howManyEntries = entryToLoop++;
     var randNumber = Math.floor((Math.random() * 10) + 1);
 
-        if (randNumber <5 ) {
+        if (randNumber < 5) {
             console.log("Number is not bigger than 5. This number is " + randNumber);
         }
   } while (randNumber < 5);
