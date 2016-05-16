@@ -40,11 +40,18 @@ console.log(oneNumb)
     }
   ;
 } give6of49();
+
     //Second step, Lets push to an array all posible numbers.
     var allPosibleNumbers = []
     for(var i = 1; i <= 49; i++) {
       allPosibleNumbers.push(i);
     }
-    console.log(AllPosibleNumbers);
-  ;     
+    console.log(allPosibleNumbers);
+           // Here willbe printed array with numbers  1-49.
+
+    var sixLuckyNumbers = allPosibleNumbers[Math.floor(Math.random()*allPosibleNumbers.length)];
+    console.log(sixLuckyNumbers);
+           // Here  one number willbe choosen (random).
+    
+
 
