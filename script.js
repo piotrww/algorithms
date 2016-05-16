@@ -40,3 +40,11 @@ console.log(oneNumb)
     }
   ;
 } give6of49();
+    //Second step, Lets push to an array all posible numbers.
+    var allPosibleNumbers = []
+    for(var i = 1; i <= 49; i++) {
+      allPosibleNumbers.push(i);
+    }
+    console.log(AllPosibleNumbers);
+  ;     
+
