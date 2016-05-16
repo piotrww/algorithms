@@ -29,3 +29,14 @@ do {
   } while (randNumber < 5);
 
 console.log("Number is found after " + howManyEntries +" times. " +"This number is " + randNumber);
+
+// Ex. 3. Lotto
+    //First step, but do not work properly. Numbers can be replied.
+function give6of49() {
+    var sixLuckyNumbers = [];
+    for(var i = 1; i <= 6; i++) {
+      var oneNumb = Math.floor((Math.random() * 100) + 1);
+console.log(oneNumb)
+    }
+  ;
+} give6of49();
