@@ -54,10 +54,14 @@ console.log(oneNumb)
     var sixLuckyNumbers = [];
     
 
-        for (var j = 1; j <6; j++) {
+        for (var j = 1; j <= 6; j++) {
              var oneLuckyNumber = allPossibleNumbers[Math.floor(Math.random()*allPossibleNumbers.length)];
-             
-            sixLuckyNumbers.push(oneLuckyNumber);   
+            
+            if (sixLuckyNumbers.indexOf(oneLuckyNumber) === -1) {
+                sixLuckyNumbers.push(oneLuckyNumber);   
+            } else {
+            	//Here a need condition to return to for loop
+            }
         }
     
     console.log(sixLuckyNumbers);      
