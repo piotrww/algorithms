@@ -57,14 +57,19 @@ console.log("works");
     var oneLuckyNumber = allPossibleNumbers[Math.floor(Math.random()*allPossibleNumbers.length)];
     return oneLuckyNumber;
     }
-    
 
     var sixLuckyNumbers = [];
+    
+    function place1to6Array() {
+    	sixLuckyNumbers.push(oneLuckyNumber);
+    }
+
+
     for (var j = 1; j <= 6; j++) {
         var oneLuckyNumber = give1of49();  
         	        
         if (sixLuckyNumbers.indexOf(oneLuckyNumber) === -1) {
-               	sixLuckyNumbers.push(oneLuckyNumber);
+               	place1to6Array();
         } else {
         	give1of49();
         }
