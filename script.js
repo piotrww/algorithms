@@ -63,13 +63,14 @@ console.log("works");
     function place1to6Array() {
     	sixLuckyNumbers.push(oneLuckyNumber);
     }
+        
 
-
+    var sixLuckyNumbers = [];
     for (var j = 1; j <= 6; j++) {
         var oneLuckyNumber = give1of49();  
         	        
         if (sixLuckyNumbers.indexOf(oneLuckyNumber) === -1) {
-               	place1to6Array();
+               	sixLuckyNumbers.push(oneLuckyNumber);
         } else {
         	give1of49();
         }
