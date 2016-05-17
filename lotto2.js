@@ -17,7 +17,7 @@ console.log("works l2");
         allPossibleNumbers.splice(oneLuckyNumberIndex, 1); //Delete content of this index in big array
         sixLuckyNumbers.push(oneLuckyNumber); //Pushing a number to a array with lucky numbers.
         console.log(oneLuckyNumber + "-<number lucky. " + allPossibleNumbers + " Deleting a drawing number, time: " + j)
-               
+               //Why no array here?
     }
     console.log(sixLuckyNumbers);
     console.log(allPossibleNumbers);
