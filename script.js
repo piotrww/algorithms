@@ -41,7 +41,7 @@
 //   ;
 // } give6of49();
 
-console.log("works");
+console.log("works!!!");
 //Another solution
     //Lets print all possible numbers
     var allPossibleNumbers = [];
@@ -49,32 +49,53 @@ console.log("works");
              allPossibleNumbers.push(i);
         }
     console.log(allPossibleNumbers);
+    var oneLuckyNumber
+    var sixLuckyNumbers = [];
 
-    // My lucky number
     
-    
+    // One my lucky number
     function give1of49() {       
-    var oneLuckyNumber = allPossibleNumbers[Math.floor(Math.random()*allPossibleNumbers.length)];
+    oneLuckyNumber = allPossibleNumbers[Math.floor(Math.random()*allPossibleNumbers.length)];
     return oneLuckyNumber;
     }
 
-    var sixLuckyNumbers = [];
-    
-    function place1to6Array() {
-    	sixLuckyNumbers.push(oneLuckyNumber);
-    }
-        
+    // Add the first number to the array with 6 numbers.
 
-    var sixLuckyNumbers = [];
-    for (var j = 1; j <= 6; j++) {
-        var oneLuckyNumber = give1of49();  
-        	        
-        if (sixLuckyNumbers.indexOf(oneLuckyNumber) === -1) {
-               	sixLuckyNumbers.push(oneLuckyNumber);
-        } else {
-        	give1of49();
-        }
-
-        
-    }
+    sixLuckyNumbers.push(give1of49());
     console.log(sixLuckyNumbers);
+
+    // Adding next numbers.
+    for (var i = 1; i<6; i++) {
+    if (sixLuckyNumbers.indexOf(oneLuckyNumber) === -1) {
+        sixLuckyNumbers.push(oneLuckyNumber);
+
+       } else {
+       	give1of49();
+       }
+
+    }      
+
+    console.log(sixLuckyNumbers);
+
+
+
+
+
+
+
+
+    // Check if a number is unique.
+    //   if (sixLuckyNumbers.indexOf(oneLuckyNumber) === -1) {
+    //        //if is unique
+    //        add1to6();           
+        
+    //   } else {
+    //    	give1of49();
+    //   }
+
+    //   }
+
+        
+            
+
+    // console.log(sixLuckyNumbers);
