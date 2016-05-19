@@ -10,23 +10,23 @@ console.log("workjjis!!!");
     var sixLuckyNumbers = [];
     var functionRecall = 0;
     
+   
+
     // One my lucky number
-    for (var i = 0; i<6; i++) {
+    for (var i=0; i<6; i++) {
 	      give1of49();
-        function give1of49() {
-           functionRecall++;
-           console.log(functionRecall + "<-- called function");        
-           oneLuckyNumber = allPossibleNumbers[Math.floor(Math.random()*allPossibleNumbers.length)];
-           console.log(oneLuckyNumber + "<---drawed number");
-           if (sixLuckyNumbers.indexOf(oneLuckyNumber) === -1) {
-               sixLuckyNumbers.push(oneLuckyNumber);
-           } else {
-              
-              give1of49();
-              
-                  }
-           }
+       
     }
 
-
+    function give1of49() {
+         functionRecall++;
+         console.log(functionRecall + "<-- called function");        
+         oneLuckyNumber = allPossibleNumbers[Math.floor(Math.random()*allPossibleNumbers.length)];
+         console.log(oneLuckyNumber + "<---drawed number");
+         if (sixLuckyNumbers.indexOf(oneLuckyNumber) === -1) {
+             sixLuckyNumbers.push(oneLuckyNumber);
+         } else {
+            give1of49();
+            }
+         }
     console.log(sixLuckyNumbers);
