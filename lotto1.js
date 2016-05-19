@@ -8,26 +8,24 @@ console.log("workjjis!!!");
     console.log(allPossibleNumbers);
     var oneLuckyNumber;
     var sixLuckyNumbers = [];
-    var functionCall = 0;
+    var functionRecall = 0;
     
     // One my lucky number
     for (var i = 0; i<6; i++) {
-	//    give1of49();
-           function give1of49() {       
-               oneLuckyNumber = allPossibleNumbers[Math.floor(Math.random()*allPossibleNumbers.length)];
-               console.log(oneLuckyNumber + "<---drawed number");
-               if (sixLuckyNumbers.indexOf(oneLuckyNumber) === -1) {
-                    sixLuckyNumbers.push(oneLuckyNumber);
-               } else {
-        	     give1of49();
-        	     
-
-        	     functionCall++;
-        	     
-        	     console.log(functionCall + "<-- called function"); 
-        	     console.log(sixLuckyNumbers);
-                      }
-               }
+	      give1of49();
+        function give1of49() {
+           functionRecall++;
+           console.log(functionRecall + "<-- called function");        
+           oneLuckyNumber = allPossibleNumbers[Math.floor(Math.random()*allPossibleNumbers.length)];
+           console.log(oneLuckyNumber + "<---drawed number");
+           if (sixLuckyNumbers.indexOf(oneLuckyNumber) === -1) {
+               sixLuckyNumbers.push(oneLuckyNumber);
+           } else {
+              
+              give1of49();
+              
+                  }
+           }
     }
 
 
