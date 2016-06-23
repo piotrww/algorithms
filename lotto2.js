@@ -1,5 +1,5 @@
 
-console.log("works l2");
+console.log("works l2!!");
 //Another solution
     //Lets print all possible numbers
     var allPossibleNumbers = [];
